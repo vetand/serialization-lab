@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package my_serializer;
+
+message Person {
+  int32 PackageID = 1;
+  int32 PersonID = 2;
+  string Name = 3;
+
+  map<int32, int32> Inventory = 4;
+  string CurrentLocation = 5;
+
+}
